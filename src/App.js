@@ -15,6 +15,8 @@ import Home from './routes/Home/Home'
 export default class App extends React.Component {
   componentDidMount () {
     smartquotes()
+    console.log(process.env)
+    console.log('process.env.PUBLIC_URL')
   }
   render () {
     return (
@@ -25,6 +27,6 @@ export default class App extends React.Component {
           </ScrollTop>
         </BrowserRouter>
       </ThemeProvider>
-    );
+    )
   }
 }
